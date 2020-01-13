@@ -1,0 +1,111 @@
+.check-point {
+  background: $grey-light6;
+  dl, ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  dt, dd, li {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  dt {
+    width: 26%;
+    text-align: center;
+    span {
+      display: block;
+      font-size: 16px;
+    }
+    em {
+      font-size: 30px;
+      font-weight: 700;
+      color: $brandColorLight;
+    }
+  }
+  dd {
+    padding: 40px 30px 40px 0;
+  }
+  li {
+    font-size: 16px;
+    > div {
+      position: relative;
+      padding-left: 35%;
+    }
+  }
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 30%;
+    line-height: 0;
+    border: 1px solid $grey-light1;
+    border-radius: 100%;
+    @include transform(translateY(-50%));
+    img {
+      width: 100%;
+    }
+  }
+  &__text1 {}
+  &__text2 {
+    display: block;
+    color: $brandColorLight;
+    font-weight: 700;
+  }
+  &__text3 {
+    color: $grey;
+  }
+
+  @include desktopS {
+    dd {
+      padding: 20px 30px 15px 0;
+    }
+    li {
+      text-align: center;
+      vertical-align: top;
+      > div {
+        padding-left: 0;
+      }
+    }
+    &__icon {
+      position: relative;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 80px;
+      margin: 0 auto 15px;
+      @include transform(none);
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include tablet {
+    padding: rem(34) 0 rem(72);
+    dl, dt, dd {
+      display: block;
+    }
+    dt {
+      width: 100%;
+      margin-bottom: rem(54);
+      span {
+        display: inline-block;
+        font-size: rem(34);
+      }
+      em {
+        font-size: rem(36);
+        margin-left: rem(10);
+      }
+    }
+    dd {
+      padding: 0;
+    }
+    li {
+      font-size: rem(22.88);
+      margin: 0 auto rem(19);
+    }
+    &__icon {
+      width: 47.91%;
+    }
+  }
+}

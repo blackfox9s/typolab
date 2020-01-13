@@ -1,0 +1,8 @@
+.page-driver {
+  .visual {
+    background-image: url('./assets/images/driver_visual_pc.jpg');
+    @include tablet {
+      background-image: url('./assets/images/driver_visual_mo.jpg');
+    }
+  }
+}
