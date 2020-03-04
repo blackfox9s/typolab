@@ -12,9 +12,9 @@
               <span class="check-point__icon">
                 <img :src="require(`@/assets/images/${item.icon}`)" alt="" />
               </span>
-              <span class="check-point__text1">{{item.text1}}</span>
-              <span class="check-point__text2">{{item.text2}}</span>
-              <span class="check-point__text3">{{item.text3}}</span>
+              <span class="check-point__text1" v-html="item.text1"></span>
+              <span class="check-point__text2" v-html="item.text2"></span>
+              <span class="check-point__text3" v-html="item.text3"></span>
             </div>
           </li>
         </ul>

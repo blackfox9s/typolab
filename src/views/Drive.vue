@@ -25,24 +25,21 @@
               <td>10년</td>
               <td>전기납</td>
               <td rowspan="3">만18세 ~ 80세</td>
-              <td>월납</td>
+              <td rowspan="4">월납<br />연납</td>
             </tr>
             <tr>
               <td>15년</td>
               <td>전기납</td>
-              <td>연납</td>
             </tr>
             <tr>
               <td>20년</td>
               <td>전기납, 10, 15년납</td>
-              <td></td>
             </tr>
             <tr>
               <th>세만기</th>
               <td>80세</td>
               <td>10, 15, 20, 25, 30년납</td>
               <td>만18세 ~ 59세</td>
-              <td></td>
             </tr>
             </tbody>
           </table>
@@ -135,12 +132,12 @@
             <tbody>
             <tr>
               <td>자동차부상치료비<br />(1~3급)</td>
-              <td class="left">피보험자가 해당특약 보험기간중 교통사고로 자동차손해배상보장법 시행령상의 부상등급 중 1~3급에 해당되는 경우 가입금액을 지급</td>
+              <td class="left">보험기간중 피보험자가 교통사고로 자동차손해배상보장법 시행령상의 부상등급 중 1~3급에 해당되는 경우 가입금액을 지급</td>
               <td>100</td>
             </tr>
             <tr>
-              <td>[의무가입]<br />교통상해50%후유장해(1회한)</td>
-              <td class="left">교통상해사고로 50%이상 후유장해가 발생한 경우 1회에 한하여 가입금액을 지급</td>
+              <td>[의무가입]<br />교통상해 50% 후유장해(1회한)</td>
+              <td class="left">보험기간중 교통상해사고로 50%이상 후유장해가 발생한 경우 1회에 한하여 가입금액을 지급</td>
               <td>1000</td>
             </tr>
             </tbody>
@@ -166,50 +163,52 @@
             <tbody>
             <tr>
               <td>자동차<br class="mo-only" />부상치료비Ⅲ</td>
-              <td class="left">교통사고로 자동차손해배상보장법시행령상의 부상등급(1~14급)에 해당하는 경우 가입금액을 지급</td>
+              <td class="left">보험기간중 교통사고로 자동차손해배상보장법시행령상의 부상등급(1~14급)에 해당하는 경우 가입금액을 지급</td>
               <td>5</td>
             </tr>
             <tr>
               <td>교통상해입원일당<br />(1일이상 180일한도)</td>
-              <td class="left">교통상해사고로 1일이상 입원하여 치료를 받는경우 입원 1일당 가입금액을 지급<br />(1회 입원당 180일 한도)</td>
+              <td class="left">보험기간중 교통상해사고로 1일이상 입원하여 치료를 받는경우 입원 1일당 가입금액을 지급 (1회 입원당 180일 한도)</td>
               <td>3</td>
             </tr>
             <tr>
               <td>응급실내원보험금<br />(상해)</td>
-              <td class="left">피보험자가 특약의 보험기간 중에 '응급환자'로서 또는 '응급환자'에는 해당하지 않으나 약관에서 정한 상해로 인하여 응급실에 내원하여 진료를 받은 경우 매 내원시마다 특약 보험가입금액을 지급</td>
+              <td class="left">보험기간중 피보험자가 특약의 보험기간 중에 '응급환자'로서 또는 '응급환자'에는 해당하지 않으나 약관에서 정한 상해로 인하여 응급실에 내원하여 진료를 받은 경우 매 내원시마다 특약 보험가입금액을 지급</td>
               <td>5</td>
             </tr>
             <tr>
               <td>교통상해80%이상<br />후유장해생활자금<br />(매월7년간지급)</td>
-              <td class="left">교통상해 80% 이상 후유장해시 1회에 한하여 가입금액을 7년 동안 매월 지급. 매월 또는 매년 지급형태의 담보의 경우 사고발생일에 확정 지급하여 드리며, 만일 사고발생일이 없을 경우에는 해당월의 마지막 영업일을 사고발생일로 함. 또한 매월 또는 매년 지급형태의 담보의 경우 보험수익자의 요청에 따라 일시지급이 가능하며, 이 경우에는 평균공시이율로 할인한 금액을 지급</td>
+              <td class="left">보험기간중 운전자교통상해로 장해분류표상 장해지급률이 80%이상에 해당하는 장해상태가 되었을 때 1회에 한하여 가입금액을 7년 동안 매월 지급. 매월 또는 매년 지급형태의 담보의 경우 사고발생일에 확정 지급하여 드리며, 만일 사고발생일이 없을 경우에는 해당월의 마지막 영업일을 사고발생일로 함. 또한 매월 또는 매년 지급형태의 담보의 경우 보험수익자의 요청에 따라 일시지급이 가능하며, 이 경우에는 평균공시이율로 할인한 금액을 지급</td>
               <td>500</td>
             </tr>
             <tr>
               <td>교통상해사망</td>
-              <td class="left">교통상해사고로 사망한 경우 가입금액을 지급</td>
+              <td class="left">보험기간중 교통상해사고로 사망한 경우 가입금액을 지급</td>
               <td>10,000</td>
             </tr>
             <tr>
-              <td>교통사고<br class="mo-only" />처리지원금Ⅳ<br />(상해)</td>
+              <td>교통사고<br class="mo-only" />처리지원금Ⅳ<br />(실손)</td>
               <td class="left">
-                운전중사고로 피해자(부모, 배우자, 자녀 제외)에게 아래의 상해를 입힌 경우 피보험자가 형사합의금으로 지급한 금액을 피해자 1인당 아래의 금액을 한도로 <span class="pointAccent">지급(1억원 가입기준 금액 예시)</span><br />
-                <span class="pointAccent">피해자 사망시 : 1억원</span><br />
-                중대법규위반 교통사고로 피해자가 42일(피해자 1인을 기준) 이상 치료를 요한다는 진단을 받은 경우<br />
-                > 42~69일 : 1,000만원<br />
-                > 70~139일 : 5,000만원<br />
-                > 140일이상 : 1억원<br />
-                일반교통사고로 피해자에게 중상해를 입혀 검찰에 의해 공소제기되거나 자동차손해배상보장법 시행령 제3조에서 정한 부상급수 1급, 2급 또는 3급에 해당하는 부상을 입힌 경우 : 1억원 (다수가입시 비례보상)
+                보험기간중 자가용자동차 운전중사고로 피해자(부모,배우자, 자녀 제외)에게 아래의 상해를 입힌 경우 피보험자가 형사합의금으로 지급한 금액을 피해자 1인당 가입금액내 한도로 실손보상함<br />
+                (1억원 가입기준 금액 예시)<br />
+                피해자 사망시 : 1억원(한도)<br />
+                보험기간중 중대법규위반 교통사고로 피해자가 42일(피해자 1인을 기준) 이상 치료를 요한다는 진단을 받은 경우<br />
+                > 42~69일 : 1,000만원(한도)<br />
+                > 70~139일 : 5,000만원(한도)<br />
+                > 140일이상 : 1억원(한도)<br />
+                보험기간중 일반교통사고로 피해자에게 중상해를 입혀 검찰에 의해 공소제기되거나
+                자동차손해배상보장법 시행령 제3조에서 정한 부상급수 1급, 2급 또는 3급에 해당하는 부상을 입힌 경우 : 1억원(한도)(다수가입시 비례보상)
               </td>
               <td>10,000</td>
             </tr>
             <tr>
               <td>자동차사고 벌금<br />(상해)</td>
-              <td class="left">운전중 대인사고로 벌금확정판결로 벌금을 부담한 경우 가입금액을 한도록 실손보상 (다수가입시 비례보상)</td>
+              <td class="left">보험기간중 운전중 대인사고로 벌금확정판결로 벌금을 부담한 경우 가입금액을 한도록 실손보상 (다수가입시 비례보상)</td>
               <td>2,000</td>
             </tr>
             <tr>
               <td>자동차사고 변호사선임비용Ⅲ<br />(상해)</td>
-              <td class="left">운전중 대인사고로 구속 또는 정식기소되어 변호사선임비용을 부담한 경우 가입금액을 한도록 실손보상 (다수가입시 비례보상)</td>
+              <td class="left">보험기간중 운전중 대인사고로 구속 또는 정식기소되어 변호사선임비용을 부담한 경우 가입금액을 한도록 실손보상 (다수가입시 비례보상)</td>
               <td>2,000</td>
             </tr>
             </tbody>
@@ -233,23 +232,29 @@
         <dd>
           <ul>
             <li class="list__type1">기준: 상해1급, 자가용운전자, 20년만기 20년간 매월 납입 기준 남녀동일 14,900원</li>
+            <li class="list__type1">아래의 보험료는 예시이며 가입나이, 성별, 납입기간 등에 따라 달라질 수 있습니다</li>
           </ul>
         </dd>
         <dd class="detail__table">
           <table>
             <caption>[단위: 원]</caption>
             <colgroup>
-              <col width="15%" />
+              <col width="12%" />
               <col width="*" />
               <col width="18%" />
-              <col width="18%" />
+              <col width="12%" span="3" />
             </colgroup>
             <thead>
             <tr>
-              <th>구분</th>
-              <th>담보명</th>
-              <th>가입금액<br /></th>
-              <th>남자<br />(40세)</th>
+              <th rowspan="2">구분</th>
+              <th rowspan="2">담보명</th>
+              <th rowspan="2">가입금액<br />(만원)</th>
+              <th colspan="3">남자</th>
+            </tr>
+            <tr>
+              <th>30세</th>
+              <th>40세</th>
+              <th>50세</th>
             </tr>
             </thead>
             <tbody>
@@ -258,73 +263,99 @@
               <td class="left">자동차 부상치료비(1~3급)</td>
               <td class="right">100</td>
               <td class="right">115</td>
+              <td class="right">115</td>
+              <td class="right">115</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">자동차부상치료비Ⅲ</td>
               <td class="right">5</td>
               <td class="right">510</td>
+              <td class="right">510</td>
+              <td class="right">510</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">교통상해입원일당(1일이상180일한도)</td>
+              <td class="left">교통상해입원일당 (1일이상180일한도)</td>
               <td class="right">3</td>
+              <td class="right">1,815</td>
               <td class="right">1,821</td>
+              <td class="right">1,968</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">응급실내원보험금(상해)</td>
               <td class="right">5</td>
+              <td class="right">615</td>
               <td class="right">620</td>
+              <td class="right">625</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">교통상해50%후유장해(1회한)</td>
+              <td class="left">교통상해 50%후유장해 (1회한)</td>
               <td class="right">1,000</td>
+              <td class="right">60</td>
+              <td class="right">70</td>
               <td class="right">70</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">교통상해80%이상후유장해생활자금(매월7년간지급)</td>
+              <td class="left">교통상해 80%이상 후유장해생활자금 (매월7년간지급)</td>
               <td class="right">500</td>
+              <td class="right">1,295</td>
               <td class="right">1,465</td>
+              <td class="right">1,555</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">교통상해사망</td>
               <td class="right">10,000</td>
+              <td class="right">2,950</td>
               <td class="right">3,130</td>
+              <td class="right">3,420</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">교통사고처리지원금Ⅳ (실손)</td>
               <td class="right">7,000</td>
-              <td class="right">3,278</td>
+              <td class="right">3,014</td>
+              <td class="right">3,014</td>
+              <td class="right">3,014</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">자동차사고벌금(실손)</td>
               <td class="right">2,000</td>
               <td class="right">273</td>
+              <td class="right">273</td>
+              <td class="right">274</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">자동차사고 변호사선임비용Ⅲ(실손)</td>
+              <td class="left">자동차사고 변호사선임비용Ⅲ (실손)</td>
               <td class="right">2,000</td>
+              <td class="right">222</td>
+              <td class="right">222</td>
               <td class="right">222</td>
             </tr>
             </tbody>
             <tfoot>
               <tr>
                 <th colspan="3">보장보험료</th>
-                <td class="right">11,504</td>
+                <td class="right">10,869</td>
+                <td class="right">11,240</td>
+                <td class="right">11,773</td>
               </tr>
               <tr>
                 <th colspan="3">적립보험료</th>
-                <td class="right">3,396</td>
+                <td class="right">4,031</td>
+                <td class="right">3,660</td>
+                <td class="right">3,127</td>
               </tr>
               <tr>
                 <th colspan="3">납입보험료</th>
+                <td class="right">14,900</td>
+                <td class="right">14,900</td>
                 <td class="right">14,900</td>
               </tr>
             </tfoot>
@@ -334,17 +365,22 @@
           <table>
             <caption>[단위: 원]</caption>
             <colgroup>
-              <col width="15%" />
+              <col width="12%" />
               <col width="*" />
               <col width="18%" />
-              <col width="18%" />
+              <col width="12%" span="3" />
             </colgroup>
             <thead>
             <tr>
-              <th>구분</th>
-              <th>담보명</th>
-              <th>가입금액<br /></th>
-              <th>여자<br />(40세)</th>
+              <th rowspan="2">구분</th>
+              <th rowspan="2">담보명</th>
+              <th rowspan="2">가입금액<br />(만원)</th>
+              <th colspan="3">여자</th>
+            </tr>
+            <tr>
+              <th>30세</th>
+              <th>40세</th>
+              <th>50세</th>
             </tr>
             </thead>
             <tbody>
@@ -353,73 +389,99 @@
               <td class="left">자동차 부상치료비(1~3급)</td>
               <td class="right">100</td>
               <td class="right">59</td>
+              <td class="right">59</td>
+              <td class="right">59</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">자동차부상치료비Ⅲ</td>
               <td class="right">5</td>
               <td class="right">231</td>
+              <td class="right">231</td>
+              <td class="right">231</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">교통상해입원일당(1일이상180일한도)</td>
+              <td class="left">교통상해입원일당 (1일이상180일한도)</td>
               <td class="right">3</td>
+              <td class="right">1,887</td>
               <td class="right">2,502</td>
+              <td class="right">2,871</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">응급실내원보험금(상해)</td>
               <td class="right">5</td>
               <td class="right">420</td>
+              <td class="right">420</td>
+              <td class="right">425</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">교통상해50%후유장해(1회한)</td>
+              <td class="left">교통상해 50%후유장해 (1회한)</td>
               <td class="right">1,000</td>
+              <td class="right">30</td>
+              <td class="right">30</td>
               <td class="right">30</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">교통상해80%이상후유장해생활자금(매월7년간지급)</td>
+              <td class="left">교통상해 80%이상 후유장해생활자금 (매월7년간지급)</td>
               <td class="right">500</td>
+              <td class="right">495</td>
               <td class="right">600</td>
+              <td class="right">595</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">교통상해사망</td>
               <td class="right">10,000</td>
+              <td class="right">1,610</td>
               <td class="right">1,630</td>
+              <td class="right">1,790</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">교통사고처리지원금Ⅳ (실손)</td>
               <td class="right">7,000</td>
-              <td class="right">3,277</td>
+              <td class="right">3,013</td>
+              <td class="right">3,013</td>
+              <td class="right">3,013</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">자동차사고벌금(실손)</td>
               <td class="right">2,000</td>
               <td class="right">273</td>
+              <td class="right">273</td>
+              <td class="right">273</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">자동차사고 변호사선임비용Ⅲ(실손)</td>
+              <td class="left">자동차사고 변호사선임비용Ⅲ (실손)</td>
               <td class="right">2,000</td>
+              <td class="right">222</td>
+              <td class="right">222</td>
               <td class="right">222</td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
               <th colspan="3">보장보험료</th>
-              <td class="right">9,244</td>
+              <td class="right">8,240</td>
+              <td class="right">8,980</td>
+              <td class="right">9,509</td>
             </tr>
             <tr>
               <th colspan="3">적립보험료</th>
-              <td class="right">5,656</td>
+              <td class="right">6,660</td>
+              <td class="right">5,920</td>
+              <td class="right">5,391</td>
             </tr>
             <tr>
               <th colspan="3">납입보험료</th>
+              <td class="right">14,900</td>
+              <td class="right">14,900</td>
               <td class="right">14,900</td>
             </tr>
             </tfoot>
@@ -441,8 +503,8 @@
               <th rowspan="2">경과년수</th>
               <th rowspan="2">납입 보험료</th>
               <th colspan="2">최저보증이율(0.3%)</th>
-              <th colspan="2">당사 공시시율과 평균공시이율 중 낮은 이율(2.05%)</th>
-              <th colspan="2">당사공시이율 (2.05%)</th>
+              <th colspan="2">당사 공시시율과 평균공시이율 중 낮은 이율(1.85%)</th>
+              <th colspan="2">당사공시이율 (1.85%)</th>
             </tr>
             <tr>
               <th>해지 환급금</th>
@@ -467,42 +529,42 @@
             <tr>
               <td>3</td>
               <td class="right">536,400</td>
-              <td class="right">58,360</td>
-              <td class="right">10.80%</td>
-              <td class="right">60,650</td>
-              <td class="right">11.30%</td>
-              <td class="right">60,650</td>
-              <td class="right">11.30%</td>
+              <td class="right">62,960</td>
+              <td class="right">11.70%</td>
+              <td class="right">65,140</td>
+              <td class="right">12.10%</td>
+              <td class="right">65,140</td>
+              <td class="right">12.10%</td>
             </tr>
             <tr>
               <td>5</td>
               <td class="right">894,000</td>
-              <td class="right">127,720</td>
-              <td class="right">14.20%</td>
-              <td class="right">134,110</td>
-              <td class="right">15.00%</td>
-              <td class="right">134,110</td>
-              <td class="right">15.00%</td>
+              <td class="right">137,680</td>
+              <td class="right">15.40%</td>
+              <td class="right">143,760</td>
+              <td class="right">16.00%</td>
+              <td class="right">143,760</td>
+              <td class="right">16.00%</td>
             </tr>
             <tr>
               <td>10</td>
               <td class="right">1,788,000</td>
-              <td class="right">323,280</td>
-              <td class="right">18.00%</td>
-              <td class="right">350,180</td>
-              <td class="right">19.50%</td>
-              <td class="right">350,180</td>
-              <td class="right">19.50%</td>
+              <td class="right">346,890</td>
+              <td class="right">19.40%</td>
+              <td class="right">372,420</td>
+              <td class="right">20.80%</td>
+              <td class="right">372,420</td>
+              <td class="right">20.80%</td>
             </tr>
             <tr>
               <td>20</td>
               <td class="right">3,576,000</td>
-              <td class="right">665,050</td>
-              <td class="right">18.60%</td>
-              <td class="right">789,840</td>
-              <td class="right">22.00%</td>
-              <td class="right">789,840</td>
-              <td class="right">22.00%</td>
+              <td class="right">716,750</td>
+              <td class="right">20.00%</td>
+              <td class="right">834,390</td>
+              <td class="right">23.30%</td>
+              <td class="right">834,390</td>
+              <td class="right">23.30%</td>
             </tr>
             </tbody>
           </table>
@@ -514,8 +576,8 @@
             <tr>
               <th rowspan="2">경과년수<br />(납입보험료)</th>
               <th>최저보증이율(0.3%)</th>
-              <th>당사 공시시율과 평균공시이율 중 낮은 이율(2.05%)</th>
-              <th>당사공시이율 (2.05%)</th>
+              <th>당사 공시시율과 평균공시이율 중 낮은 이율(1.85%)</th>
+              <th>당사공시이율 (1.85%)</th>
             </tr>
             <tr>
               <th>해지환급금<br />(환급률)</th>
@@ -530,39 +592,41 @@
             </tr>
             <tr>
               <td>3년<br />(536,400)</td>
-              <td class="right">58,360<br />(10.80%)</td>
-              <td class="right">60,650<br />(11.30%)</td>
-              <td class="right">60,650<br />(11.30%)</td>
+              <td class="right">62,960<br />(11.70%)</td>
+              <td class="right">65,140<br />(12.10%)</td>
+              <td class="right">65,140<br />(12.10%)</td>
             </tr>
             <tr>
               <td>5년<br />(894,000)</td>
-              <td class="right">127,720<br />(14.20%)</td>
-              <td class="right">134,110<br />(15.00%)</td>
-              <td class="right">134,110<br />(15.00%)</td>
+              <td class="right">137,680<br />(15.40%)</td>
+              <td class="right">143,760<br />(16.00%)</td>
+              <td class="right">143,760<br />(16.00%)</td>
             </tr>
             <tr>
               <td>10년<br />(1,788,000)</td>
-              <td class="right">323,280<br />(18.00%)</td>
-              <td class="right">350,180<br />(19.50%)</td>
-              <td class="right">350,180<br />(19.50%)</td>
+              <td class="right">346,890<br />(19.40%)</td>
+              <td class="right">372,420<br />(20.80%)</td>
+              <td class="right">372,420<br />(20.80%)</td>
             </tr>
             <tr>
               <td>20년<br />(3,576,000)</td>
-              <td class="right">665,050<br />(18.60%)</td>
-              <td class="right">789,840<br />(22.00%)</td>
-              <td class="right">789,840<br />(22.00%)</td>
+              <td class="right">716,750<br />(20.00%)</td>
+              <td class="right">834,390<br />(23.30%)</td>
+              <td class="right">834,390<br />(23.30%)</td>
             </tr>
             </tbody>
           </table>
         </dd>
         <dd>
           <ol class="list__type2">
-            <li><i>1)</i>20년 만기시에 환급금이 789,840원인 만기일부 환급형 입니다. 예시된 금액은 이율에 따라 변동될 수 있습니다.</li>
-            <li><i>2)</i>위 예상해지환급금은 적립부분 순보험료(적립부분 영업보험료에서 회사운영경비를 차감한 금액)를 해당이율로 부리, 적립한 것으로 향후 이계약의 공시이율, 계약내용변경, 보험료 실납입일자 등에 따라 변동될 수 있으며 미래의 수익을 보장하는 것은 아닙니다.</li>
-            <li><i>3)</i>최저보증이율(0.3%), 평균공시이율 (2019년 기준 2.5%) 및 당사 공시이율 (2019년 9월 기준 2.05%) 을 기준으로 산출된 금액입니다.</li>
+            <li class="pointAccent"><i>1)</i>20년 만기시에 환급금이 834,390원인 만기일부 환급형 입니다. 예시된 금액은 이율에 따라 변동될 수 있습니다.</li>
+            <li class="pointAccent"><i>2)</i>위 예상해지환급금은 적립부분 순보험료(적립부분 영업보험료에서 회사운영경비를 차감한 금액)를 해당이율로 부리, 적립한 것으로 향후 이계약의 공시이율, 계약내용변경, 보험료 실납입일자 등에 따라 변동될 수 있으며 미래의 수익을 보장하는 것은 아닙니다.
+            </li>
+            <li><i>3)</i>최저보증이율(0.3%), 평균공시이율 (2019년 기준 2.5%) 및 당사 공시이율 (2020년 2월 기준 1.85%)을 기준으로 산출된 금액입니다.</li>
             <li><i>4)</i>실제 해지 및 만기시에는 금리연동형 상품의 적립부분 부리이율인 이 계약의 공시이율(보장성공시이율1701)을 적용하여 산출하므로 공시이율 변동에 따라 실제 환급금 및 환급률은 달라질 수 있습니다.</li>
             <li><i>5)</i>평균공시이율은 감독원장이 정하는 바에 따라, 전년 9월말 기준으로 직전 12개월 간 전체 보험회사 공시이율의 평균으로, 판매시점의 공시이율을 한도로 합니다.</li>
             <li><i>6)</i>공시이율은 매월 1일 회사가 정하며, 매월 1일부터 말일까지 1개월간 확정 적용합니다.</li>
+            <li><i>7)</i>상기 예시금액은 세전기준으로, 관련세법에서 정하는 요건에 부합하는 경우 과세가 가능합니다.</li>
           </ol>
         </dd>
       </dl>
@@ -584,52 +648,59 @@ export default {
   data() {
     return {
       info: {
-        name: '무배당 프로미라이프 참좋은운전자보험™',
+        name: '무배당 프로미라이프 참좋은운전자보험(TM)',
         class: 'page-driver',
         type: '운전자',
-        description: '월 2만원 이상 납입 고객 차량용품 배송서비스 제공 (거치대/충전기/정리함, 택1)',
+        description: '',
         params: {
           category_code: 'DR',
         },
       },
       title: {
-        number: '준법감시인확인필_제2018-1887(2018.04.25)',
+        number: {
+          pc: '손해보험협회 심의필 제28105호(2020.03.03)',
+          mo: '손해보험협회 심의필 제28106호(2020.03.03)'
+        },
         text1: '대한민국 첫번째 운전자보험',
         text2: 'DB손해보험<br /> 운전자보험',
       },
       checkPoint: [
         {
           icon: 'driver_icon1.png',
-          text1: '교통사고 후유장해',
-          text2: '매월 생활지원금 보장',
+          text1: '교통사고 80%이상<br />후유장해',
+          text2: '매월 생활자금 보장',
           text3: '(특약)',
         },
         {
           icon: 'driver_icon2.png',
-          text1: '교통사고 처리지원금',
-          text2: '최대 1억 지급',
+          text1: '교통상해입원일당',
+          text2: '1일 이상 180일 한도',
           text3: '(특약)',
         },
         {
           icon: 'driver_icon3.png',
-          text1: '변호사 선임비용 보장',
-          text2: '합의금/벌금/형사책임',
+          text1: '자동차사고 변호사<br /> 선임비용',
+          text2: '교통사고처리지원금 보장',
           text3: '(특약)',
         }
       ],
       premium: {
         m: {
           start: 1999,
-          end: 1959,
+          end: 1956,
+          minAge: 20,
+          maxAge: 65,
           price: [
-            15000,
+            '14,900',
           ],
         },
         f: {
           start: 1999,
-          end: 1959,
+          end: 1956,
+          minAge: 20,
+          maxAge: 65,
           price: [
-            15000,
+            '14,900',
           ],
         },
       },

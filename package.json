@@ -42,7 +42,8 @@
     "globals": {
       "gtag": false,
       "Emf": false,
-      "fbq": false
+      "fbq": false,
+      "kakaoPixel": false
     },
     "rules": {
       "no-console": "off"

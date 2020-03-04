@@ -1,19 +1,15 @@
 .visual {
   background: 50% 0 no-repeat;
   background-size: cover;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   @include tablet {
-    padding-bottom: rem(101);
+    padding-bottom: rem(75);
   }
 
   &-title {
     text-align: center;
     color: $grey-light6;
     padding: 120px 0 54px;
-
-    &__number {
-      display: none;
-    }
 
     &__text1 {
       font-size: 35px;
@@ -55,6 +51,21 @@
           display: block;
         }
       }
+    }
+  }
+
+  &__number {
+    display: block;
+    color: $grey-light6;
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 10px;
+    margin-top: 20px;
+
+    @include tablet {
+      font-size: rem(23);
+      padding-left: rem(5);
+      margin-top: rem(20);
     }
   }
 
@@ -350,6 +361,13 @@
   &__button {
     margin: 16px -1px 0;
 
+    i {
+      display: inline-block;
+      background: 50% 50% no-repeat;
+      background-size: contain;
+      vertical-align: top;
+    }
+
     div {
       display: table;
       table-layout: fixed;
@@ -387,12 +405,34 @@
     background: $btnCalColor;
     border-top-color: $btnCalColor1;
     border-bottom-color: $btnCalColor2;
+    i {
+      background-image: url('./assets/images/layout/icon-cal.png');
+      width: 21px;
+      height: 27px;
+      margin-top: 5px;
+      @include tablet {
+        width: rem(28);
+        height: rem(36);
+        margin-top: rem(5);
+      }
+    }
   }
 
   &__button-free {
     background: $btnFreeColor;
     border-top-color: $btnFreeColor1;
     border-bottom-color: $btnFreeColor2;
+    i {
+      background-image: url('./assets/images/layout/icon-free.png');
+      width: 29px;
+      height: 28px;
+      margin-top: 4px;
+      @include tablet {
+        width: rem(37);
+        height: rem(35);
+        margin-top: rem(4);
+      }
+    }
   }
 }
 

@@ -10,7 +10,7 @@
     vertical-align: middle;
   }
   dt {
-    width: 26%;
+    width: 24%;
     text-align: center;
     span {
       display: block;
@@ -50,6 +50,7 @@
     display: block;
     color: $brandColorLight;
     font-weight: 700;
+    white-space: nowrap;
   }
   &__text3 {
     color: $grey;

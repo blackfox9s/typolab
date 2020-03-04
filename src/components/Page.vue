@@ -2,7 +2,6 @@
   <div class="contents" :class="info.class">
     <section class="visual">
       <div class="visual-title">
-        <div class="visual-title__number">{{title.number}}</div>
         <div class="visual-title__text1">{{title.text1}}</div>
         <div class="visual-title__text2" v-html="title.text2"></div>
       </div>
@@ -16,7 +15,7 @@
             </p>
             <ul class="search-form__inputs">
               <li>
-                <input type="text" placeholder="이름"
+                <input type="text" placeholder="이름 (예:홍길동)"
                        v-model="params.name"
                        v-on:keyup="hangulCheck($event.target.value, 'name')" />
               </li>
@@ -33,41 +32,35 @@
                 </div>
               </li>
               <li>
-                <input type="tel" placeholder="생년월일 8자리" maxlength="8"
-                       v-model="params.birth"
+                <input type="tel" placeholder="생년월일(예:19880716)" maxlength="8"
+                       v-model="params.birthday"
                        v-on:keyup="numberCheck($event.target.value, 'birth')"  />
               </li>
               <li>
-                <input type="tel" placeholder="전화번호 –없이 입력" maxlength="11"
+                <input type="tel" placeholder="휴대폰번호(-없이 입력)" maxlength="11"
                        v-model="params.mobile_num"
                        v-on:keyup="numberCheck($event.target.value, 'mobile_num')"  />
               </li>
             </ul>
             <ul class="search-form__agree">
               <li>
-                <span @click="handlePopupToggle('agree1')"
-                      :class="{active: params.agree1 === 'on'}">
-                  개인정보 수집 이용 동의
+                <span @click="handlePopupToggle('agree')"
+                      :class="{active: params.agree === 'on'}">
+                  개인정보 수집 및 이용동의
                 </span>
-                <!--<em @click="handlePopupToggle('agree1', 'detail')">자세히보기</em>-->
-              </li>
-              <li>
-                <span @click="handlePopupToggle('agree2')"
-                      :class="{active: params.agree2 === 'on'}">
-                  개인정보 수집 위탁 동의
-                </span>
-                <!--<em @click="handlePopupToggle('agree2', 'detail')">자세히보기</em>-->
               </li>
             </ul>
             <div class="search-form__button">
               <div>
                 <span>
                   <button type="button" class="search-form__button-cal" @click="premiumCalculation">
+                    <i></i>
                     보험료계산
                   </button>
                 </span>
                 <span>
                   <button type="button" class="search-form__button-free" @click="freeConsultation">
+                    <i></i>
                     무료 상담신청
                   </button>
                 </span>
@@ -77,16 +70,11 @@
           <div class="price-result">
             <div class="price-result__box">
               <div>
-                <template v-if="premiumResult.check">
-                  <p>
-                    <span><em>{{premiumResult.name}}</em></span>님의<br class="pc-only" />
-                    예상 {{info.type}} 보험료는
-                  </p>
-                  <p><strong><em>{{premiumResult.price}}원</em></strong>입니다.</p>
-                </template>
-                <template v-else>
-                  내 보험료를 간편하게<br />확인해보세요!
-                </template>
+                <p>
+                  <span><em>{{premiumResult.check ? premiumResult.name : '홍길동'}}</em></span>님의<br class="pc-only" />
+                  예상 {{info.type}} 보험료는
+                </p>
+                <p><strong><em>월 {{premiumResult.check ? premiumResult.price : '??'}}원</em></strong>입니다.</p>
               </div>
             </div>
           </div>
@@ -95,6 +83,7 @@
           <span class="visual-call__text">무료상담전화</span>
           <span class="visual-call__number">{{call}}</span>
         </div>
+        <div class="visual__number">{{ simNumber }}</div>
       </div>
     </section>
 
@@ -251,37 +240,7 @@
       </div>
     </section>
 
-    <Popup class="modal-agree" ref="agree1" :footerClose="popData.footerClose">
-      <template slot="header">
-        개인정보 수집 및 위탁동의
-      </template>
-      <div slot="body" class="modal-agree__wrap">
-        <div class="modal-agree__desc-box">
-          - 개인정보 취급을 위탁 받은자 : GS엠비즈<br />
-          - 개인정보 취급 위탁을 하는 업무의 내용 : 사은품 배송<br />
-          - 위탁하는 개인정보 : 사은품명. 배송지, 이름, 연락처<br />
-          - 개인정보 보유기간 : 신청접수 월의 다음달 말까지, 고객동의 철회 시 즉시 파기
-        </div>
-      </div>
-      <template slot="footer">
-        <div v-if="popData.agreeCheck" class="modal-agree__checkbox">
-          <label>
-            <input type="radio" name="agree1" value="on"
-                   v-model="params.agree1"
-                   v-on:click="handlePopupToggle('agree1')" />
-            <span>동의</span>
-          </label>
-          <label>
-            <input type="radio" name="agree1" value="off"
-                   v-model="params.agree1"
-                   v-on:click="handlePopupToggle('agree1')" />
-            <span>미동의</span>
-          </label>
-        </div>
-      </template>
-    </Popup>
-
-    <Popup class="modal-agree" ref="agree2" :footerClose="popData.footerClose">
+    <Popup class="modal-agree" ref="agree" :footerClose="popData.footerClose">
       <template slot="header">
         개인정보 수집 및 이용동의
       </template>
@@ -292,31 +251,31 @@
         </div>
         <div class="modal-agree__desc-box">
           <strong>1. 개인정보의 수집 및 이용목적</strong><br />
-          <p>- 보험상품 소개 및 가입안내, 이벤트 안내 등</p>
+          <p>- 보험상품 서비스 소개 및 가입안내(전화, SMS)</p>
           <strong>2. 수집하는 개인정보의 항목</strong><br />
-          <p>- 성명, 성별, 생년월일, 전화번호</p>
-          <strong>3. 보유 및 이용기간 : 동의일로부터 3년</strong><br />
-          <strong>4. 개인정보 수집 주체 : (주)DB손해보험</strong><br />
-          <strong>5. 개인(신용) 정보를 제공 받는 자 : 당사 소속 설계사 및 대리점</strong>
+          <p>- 개인식별정보(성명, 성별, 생년월일, 휴대전화번호)</p>
+          <strong>3. 보유 및 이용기간</strong><br />
+          <p>- 동의일로부터 3년이나 고객의 정보삭제 요청 시 즉시 삭제 진행</p>
+          <strong>4. 개인정보 수집 주체 : ㈜DB손해보험, ㈜마케팅인슈</strong><br />
+          <strong>5. 개인(신용)정보를 제공 받는 자 : (주)DB손해보험, (주)마케팅인슈</strong>
         </div>
         <div class="modal-agree__text">
-          귀하는 상기동의를 거부할 수 있습니다.<br />
-          다만, 이에 대한 동의를 하지 않을 경우 정상적인  서비스 제공에 제한이 있을 수 있습니다.<br />
-          위 동의에 대한 개인정보취급에 대한 사항은  당사 인터넷 홈페이지(<a href="https://www.directdb.co.kr" target="_blank">https://www.directdb.co.kr</a>)를 통해 확인하실 수 있습니다.
+          본 동의를 거부하시는 경우에는 보험계약 상담 등 정상적인 서비스 제공이 불가능하며 본 동의서에 의한 개인(신용) 정보 조회는 귀하의 신용등급에 영향을 주지 않습니다.<br />
+          또한 고객센터(1688-0835)를 통해 철회하거나 보험계약상담 목적의 연락에 대해 중단을 요청 하실 수 있습니다.
         </div>
       </div>
       <template slot="footer">
         <div v-if="popData.agreeCheck" class="modal-agree__checkbox">
           <label>
-            <input type="radio" name="agree2" value="on"
-                   v-model="params.agree2"
-                   v-on:click="handlePopupToggle('agree2')" />
+            <input type="radio" name="agree" value="on"
+                   v-model="params.agree"
+                   v-on:click="handlePopupToggle('agree')" />
             <span>동의</span>
           </label>
           <label>
-            <input type="radio" name="agree2" value="off"
-                   v-model="params.agree2"
-                   v-on:click="handlePopupToggle('agree2')" />
+            <input type="radio" name="agree" value="off"
+                   v-model="params.agree"
+                   v-on:click="handlePopupToggle('agree')" />
             <span>미동의</span>
           </label>
         </div>
@@ -371,10 +330,9 @@ export default {
         device_os: null,
         name: '',
         mobile_num: '',
-        birth: '',
+        birthday: '',
         gender: '',
-        agree1: '',
-        agree2: '',
+        agree: '',
       },
       nameCheckList: ['개새끼', '개색기', '개색끼', '개자식', '개보지', '개자지', '개년', '개걸래', '개걸레', '씨발', '씨팔', '씨부랄', '씨바랄', '씹창', '씹탱', '씹보지', '씹자지', '씨방세', '씨방새', '씨펄', '시펄', '십탱', '씨박', '썅', '쌍놈', '쌍넘', '싸가지', '쓰벌', '씁얼', '상넘이', '상놈의', '상놈이', '상놈을', '좆', '좃', '존나게', '존만한', '같은년', '넣을년', '버릴년', '부랄년', '바랄년', '미친년', '니기미', '니미씹', '니미씨', '니미럴', '니미랄', '호로', '후레아들', '호로새끼', '후레자식', '후래자식', '후라들년', '후라들넘', '빠구리', 'script', 'iframe', '병신'],
       telCheckList: ['12345678', '00000000', '11111111', '22222222', '33333333', '44444444', '55555555', '66666666', '77777777', '88888888', '99999999', '1231234', '1234567', '12341234', '0000000', '1111111', '2222222', '3333333', '4444444', '5555555', '6666666', '7777777', '8888888', '9999999'],
@@ -398,8 +356,16 @@ export default {
     }
   },
   computed: {
+    simNumber () {
+      return isMobile ? this.title.number.mo : this.title.number.pc;
+    }
   },
   mounted() {
+    if(isMobile) {
+      kakaoPixel('2604128586190927182').pageView('방문_M');
+    } else {
+      kakaoPixel('2604128586190927182').pageView('방문_PC');
+    }
     this.params = Object.assign(this.params, this.info.params);
     this.params.device = isMobile ? 'mo' : 'pc';
     this.params.device_os = osName;
@@ -431,6 +397,28 @@ export default {
     handleTab(index) {
       this.currentTab = index;
     },
+    insuranceAgeCalculator: function (birthday) {
+      const d = new Date();
+      const today = {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        date: d.getDate(),
+      };
+      const birth = {
+        year: parseInt(birthday[0]),
+        month: parseInt(birthday[1]),
+        date: parseInt(birthday[2]),
+      };
+      let totalMonth = (today.year * 12 + today.month) - (birth.year * 12 + birth.month);
+      if (today.date < birth.date) {
+        totalMonth -= 1;
+      }
+      let age = parseInt(totalMonth / 12, 10);
+      if ((totalMonth % 12) > 5) {
+        age += 1;
+      }
+      return age;
+    },
     ageCalculator(year) {
       const d = new Date();
       const age = d.getFullYear() - year;
@@ -439,7 +427,7 @@ export default {
     checkValue() {
       /* 이름 */
       if (this.params.name === '') {
-        alert('성명 - 반드시 입력하여야 합니다.');
+        alert('이름을 입력해주세요.');
         return false;
       } else {
         for (let i = 0; i < this.nameCheckList.length; i++) {
@@ -452,44 +440,42 @@ export default {
 
       /* 성별 */
       if (this.params.gender === '') {
-        alert('성별 - 반드시 입력하여야 합니다.');
+        alert('성별을 선택해 주세요.');
         return false;
       }
 
       /* 생년월일 */
-      if (this.params.birth === '') {
+      if (this.params.birthday === '') {
         alert('생년월일 - 반드시 입력하여야 합니다.');
         return false;
-      } else if (this.params.birth.length !== 8) {
-        alert('생년월일 - 8자리를 확인해주세요.');
+      } else if (this.params.birthday.length !== 8) {
+        alert('생년월일을 입력하세요.');
       } else {
         const birth = [
-          this.params.birth.substring(0, 4),
-          this.params.birth.substring(4, 6),
-          this.params.birth.substring(6, 8),
+          this.params.birthday.substring(0, 4),
+          this.params.birthday.substring(4, 6),
+          this.params.birthday.substring(6, 8),
         ];
         const birthReg = /^(0[0-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/;
-        const minAge = this.premium[this.params.gender].start;
-        const maxAge = this.premium[this.params.gender].end;
-        this.insurance.minAge = this.ageCalculator(minAge);
-        this.insurance.maxAge = this.ageCalculator(maxAge);
-        this.insurance.userAge = this.ageCalculator(birth[0]);
+        this.insurance.minAge = this.premium[this.params.gender].minAge;
+        this.insurance.maxAge = this.premium[this.params.gender].maxAge;
+        this.insurance.userAge = this.insuranceAgeCalculator(birth);
 
         if (!birthReg.test(birth[1] + '-' + birth[2])) {
           alert('생년월일 - 입력값이 잘못되었습니다.');
           return false;
-        } else  if (birth[0] > minAge || birth[0] < maxAge) {
-          alert(`본 상품은 ${this.insurance.minAge}세부터 ${this.insurance.maxAge}세까지 참여가능합니다.`);
+        } else  if (this.insurance.userAge < this.insurance.minAge || this.insurance.userAge > this.insurance.maxAge) {
+          alert(`본 상품은 보험나이 ${this.insurance.minAge}세부터 ${this.insurance.maxAge}세까지만 보험료 계산이 가능합니다. 그 외에는 전문상담원을 통해 안내드립니다.`);
           return false;
         }
       }
 
       /* 전화번호 */
       if (this.params.mobile_num === '') {
-        alert('전화번호 - 반드시 입력하여야 합니다.');
+        alert('휴대폰번호를 입력하세요');
         return false;
       } else if (this.params.mobile_num.length < 10){
-        alert('전화번호 - 정확히 입력하여야 합니다.');
+        alert('전화번호 형식에 맞춰서 입력하세요.\nex)01012552678)');
         return false;
       } else {
         const tel = this.params.mobile_num;
@@ -505,18 +491,15 @@ export default {
         for (let i = 0; i < this.telCheckList.length; i++) {
           const checkNumber = this.params.mobile_num2 + '' + this.params.mobile_num3;
           if (checkNumber.indexOf(this.telCheckList[i]) >= 0) {
-            alert('전화번호를 잘못 입력하셨습니다.');
+            alert('전화번호를 확인해주세요.');
             return false;
           }
         }
       }
 
       /* 동의 */
-      if (this.params.agree1 !== 'on') {
-        alert('개인정보수집 이용 동의를 해야합니다.');
-        return false;
-      } else if (this.params.agree2 !== 'on') {
-        alert('개인정보수집 위탁 동의를 해야합니다.');
+      if (this.params.agree !== 'on') {
+        alert('개인정보 수집 및 이용에 동의를 하셔야 상담신청이 가능합니다. ');
         return false;
       }
 
@@ -529,7 +512,7 @@ export default {
         this.premiumResult.check = true;
         this.premiumResult.name = this.params.name;
         this.premiumResult.price = this.insurance.price.all ? this.insurance.price.all : this.insurance.price[this.insurance.userAge];
-        // this.gtagPremiumCalculation();
+        this.statisticsPremiumCalculation();
       } else {
         this.premiumResult.check = false;
       }
@@ -542,10 +525,10 @@ export default {
 
       let ageKey = startAge;
       if(price.length === 1) {
-        this.insurance.price.all = Number(price[0]);
+        this.insurance.price.all = price[0];
       } else {
         for (let i = 0; i <= counting; i++) {
-          this.insurance.price[ageKey] = Number(price[i]);
+          this.insurance.price[ageKey] = price[i];
           ageKey += 1;
         }
       }
@@ -556,14 +539,31 @@ export default {
           method: 'post',
           params: this.params,
         });
-        if (response.data.data.status) {
+        if (response.data.status) {
           if (this.sid) {
             this.receive();
           }
-          // this.gtagFreeConsultation();
+          this.reset();
+          this.statisticsFreeConsultation();
           this.handlePopupToggle('consult');
         }
       }
+    },
+    reset() {
+      this.params = {
+        ...this.params,
+        name: '',
+        mobile_num: '',
+        birth: '',
+        gender: '',
+        agree1: '',
+        agree2: '',
+      };
+      this.premiumResult= {
+        check: false,
+        name: '',
+        price: '',
+      };
     },
     receive() {
       api.call('/cpa/receive.cb', {
@@ -583,30 +583,66 @@ export default {
       } else {
         this.popData.agreeCheck = true;
         this.popData.footerClose = false;
-        if (this.params[refName] === 'on') {
-          this.params[refName] = 'off';
+        if(refName !== 'consult') {
+          if (this.params[refName] === 'on') {
+            this.params[refName] = 'off';
+          } else {
+            this.$refs[refName].handleOpenClose();
+          }
         } else {
           this.$refs[refName].handleOpenClose();
         }
       }
     },
     /* gtag */
-    gtagPremiumCalculation(url) {
+    statisticsPremiumCalculation(url) {
       const callback = function () {
         if (typeof (url) != 'undefined') {
           window.location = url;
         }
       };
-      gtag('event', 'conversion', {'send_to': 'AW-955288494/IjYnCLWb73YQrpfCxwM', 'event_callback': callback});
+      if (isMobile) {
+        Emf.convCall(1023, 5511, 0, 0, 0);
+        gtag('event', 'conversion', {
+          'send_to': 'AW-674307215/lMG7CLb6pLoBEI-5xMEC',
+          'event_callback': callback
+        });
+        kakaoPixel('2604128586190927182').pageView();
+        kakaoPixel('2604128586190927182').completeRegistration('M_보험료계산');
+      } else {
+        Emf.convCall(1023, 5509, 0, 0, 0);
+        gtag('event', 'conversion', {
+          'send_to': 'AW-674307215/zbQwCInKr7oBEI-5xMEC',
+          'event_callback': callback
+        });
+        kakaoPixel('2604128586190927182').pageView();
+        kakaoPixel('2604128586190927182').completeRegistration('PC_보험료계산');
+      }
       return false;
     },
-    gtagFreeConsultation(url) {
+    statisticsFreeConsultation(url) {
       const callback = function () {
         if (typeof (url) != 'undefined') {
           window.location = url;
         }
       };
-      gtag('event', 'conversion', {'send_to': 'AW-955288494/YQPrCJzogncQrpfCxwM', 'event_callback': callback});
+      if (isMobile) {
+        Emf.convCall(1023, 5512, 0, 0, 0);
+        gtag('event', 'conversion', {
+          'send_to': 'AW-674307215/ZmpKCP3WlLoBEI-5xMEC',
+          'event_callback': callback
+        });
+        kakaoPixel('2604128586190927182').pageView();
+        kakaoPixel('2604128586190927182').completeRegistration('M_상담신청');
+      } else {
+        Emf.convCall(1023, 5510, 0, 0, 0);
+        gtag('event', 'conversion', {
+          'send_to': 'AW-674307215/nKzzCJzklLoBEI-5xMEC',
+          'event_callback': callback
+        });
+        kakaoPixel('2604128586190927182').pageView();
+        kakaoPixel('2604128586190927182').completeRegistration('PC_상담신청');
+      }
       return false;
     },
   },
