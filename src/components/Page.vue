@@ -583,12 +583,11 @@ export default {
       } else {
         this.popData.agreeCheck = true;
         this.popData.footerClose = false;
-        if(refName !== 'consult') {
-          if (this.params[refName] === 'on') {
-            this.params[refName] = 'off';
-          } else {
-            this.$refs[refName].handleOpenClose();
+        if(refName === 'consult') {
+          if (this.params.agree === 'on') {
+            this.params.agree = 'off';
           }
+          this.$refs[refName].handleOpenClose();
         } else {
           this.$refs[refName].handleOpenClose();
         }
