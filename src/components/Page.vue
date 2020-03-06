@@ -532,8 +532,9 @@ export default {
           ageKey += 1;
         }
       }
+      this.freeConsultation('premiumCalculation')
     },
-    async freeConsultation() {
+    async freeConsultation(type) {
       if (this.checkValue()) {
         const response = await api.call('/cpa/attend.cb', {
           method: 'post',
@@ -543,9 +544,11 @@ export default {
           if (this.sid) {
             this.receive();
           }
-          this.reset();
-          this.statisticsFreeConsultation();
-          this.handlePopupToggle('consult');
+          if (type !== 'premiumCalculation') {
+            this.reset();
+            this.statisticsFreeConsultation();
+            this.handlePopupToggle('consult');
+          }
         }
       }
     },
