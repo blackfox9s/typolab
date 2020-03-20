@@ -3,7 +3,7 @@
     <header class="header">
       <div class="section">
         <h1 class="header__logo">
-          <span class="header__logo-img"><img src="@/assets/images/layout/logo.png" alt="DB손해보험" /></span>
+          <span class="header__logo-img"><img src="@/assets/images/layout/logo2.png" alt="DB손해보험" /></span>
           <!--<span class="header__logo-text">동부화재의 새 이름</span>-->
         </h1>
         <span class="header__call"><a :href="`tel:${call}`">{{call}}</a></span>

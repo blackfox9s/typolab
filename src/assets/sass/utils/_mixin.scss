@@ -164,3 +164,22 @@ $prefix-for-spec:      true !default;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=$num*100);
   filter: alpha(opacity=$num*100);
 }
+
+@mixin popupBackground($active: 'off') {
+  @if $active == 'off' {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.32);
+    transition: $base-transition;
+    visibility: hidden;
+    opacity: 0;
+  } @else {
+    transition-delay: 0.15s;
+    visibility: visible;
+    opacity: 1;
+  }
+}
