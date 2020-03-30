@@ -297,17 +297,41 @@
         </template>
       </Popup>
 
-      <Popup class="modal-consult" ref="consult">
-        <template slot="header">상담신청</template>
+      <Popup :footer-close="false" class="modal-consult" ref="consult">
+        <div slot="header" class="modal-consult__header">
+          <p class="modal-consult__header-txt1">운전자보험 무료상담 신청완료</p>
+          <p class="modal-consult__header-txt2">운전자보험 상담신청이 성공적으로 접수되었습니다.</p>
+        </div>
         <div slot="body" class="modal-consult__text">
-          상담신청이 정상적으로<br />신청되었습니다.
+          <img src="@/assets/images/layout/modal_consult.png" alt="" />
+          <div>
+            안녕하세요, 고객님.<br />
+            전문 상담사가 <span>02-2071-****</span> 번호로<br />
+            전화 연결 예정입니다.
+          </div>
+          <p>※ 업무시간 : 평일 09:00~18:00(토요일, 공휴일 제외)</p>
+        </div>
+        <div slot="footer" class="modal-consult__close">
+          <span @click="$refs.consult.handleOpenClose()"><i class="fas fa-times"></i></span>
         </div>
       </Popup>
 
-      <Popup class="modal-consult" ref="calculation">
-        <template slot="header">보험료 계산</template>
+      <Popup :footer-close="false" class="modal-consult" ref="calculation">
+        <div slot="header" class="modal-consult__header">
+          <p class="modal-consult__header-txt1">운전자보험 보험료 계산완료</p>
+          <p class="modal-consult__header-txt2">고객님의 운전자보험 보험료 계산이 완료되었습니다.</p>
+        </div>
         <div slot="body" class="modal-consult__text">
-          고객님의 보험료 계산이<br />완료되었습니다.
+          <img src="@/assets/images/layout/modal_calculation.png" alt="" />
+          <div>
+            안녕하세요.<br />
+            정보 입력창 우측 또는 하단에서<br />
+            고객님의 예상보험료를 확인하실 수 있습니다.
+          </div>
+          <p>※ 업무시간 : 평일 09:00~18:00(토요일, 공휴일 제외)</p>
+        </div>
+        <div slot="footer" class="modal-consult__close">
+          <span @click="$refs.calculation.handleOpenClose()"><i class="fas fa-times"></i></span>
         </div>
       </Popup>
     </div>
