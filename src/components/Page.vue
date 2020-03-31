@@ -94,6 +94,20 @@
               </div>
             </div>
           </div>
+          <div class="visual-gift">
+            <span class="visual-gift__img pc-only">
+              <img src="@/assets/images/gift_pc.jpg" alt="" />
+            </span>
+            <span class="visual-gift__img mo-only">
+              <img src="@/assets/images/gift_mobile.jpg" alt="" />
+            </span>
+            <dl>
+              <dt>※ 전화상담 및 가입 시 확인</dt>
+              <dd>- 운전자보험 관심 고객 당 1회 참여 가능합니다.</dd>
+              <dd>- 이벤트 완료 후 익월 말일 일괄 발송됩니다.</dd>
+              <dd>- 제공주체 : ㈜마케팅인슈</dd>
+            </dl>
+          </div>
           <div class="pc-only visual-call">
             <span class="visual-call__text">무료상담전화</span>
             <span class="visual-call__number">{{call}}</span>

@@ -3,7 +3,7 @@
   background-size: cover;
   padding-bottom: 80px;
   @include tablet {
-    padding-bottom: rem(75);
+    padding-bottom: rem(27);
   }
 
   &-title {
@@ -70,7 +70,7 @@
   }
 
   &-call {
-    margin-top: 54px;
+    margin-top: 24px;
     border: 2px solid $tWhiteColor5;
     border-radius: 35px;
     text-align: center;
@@ -87,6 +87,25 @@
     &__number {
       font-size: 32px;
       margin-left: 16px;
+    }
+  }
+
+  &-gift {
+    margin-top: 11px;
+    dl {
+      margin: 12px 12px 0;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 1.4;
+      color: $grey-light6;
+      opacity: 0.8;
+    }
+    @include tablet {
+      margin-top: rem(23);
+      dl {
+        margin: rem(10) 0 rem(60);
+        font-size: rem(23);
+      }
     }
   }
 }
