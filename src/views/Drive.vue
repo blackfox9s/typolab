@@ -187,7 +187,7 @@
               <td>10,000</td>
             </tr>
             <tr>
-              <td>교통사고<br class="mo-only" />처리지원금Ⅳ<br />(실손)</td>
+              <td>자가용운전자 <br class="mo-only" />교통사고처리지원금Ⅳ<br />(실손)</td>
               <td class="left">
                 보험기간중 자가용자동차 운전중사고로 피해자(부모,배우자, 자녀 제외)에게 아래의 상해를 입힌 경우 피보험자가 형사합의금으로 지급한 금액을 피해자 1인당 가입금액내 한도로 실손보상함<br />
                 (1억원 가입기준 금액 예시)<br />
@@ -199,15 +199,15 @@
                 보험기간중 일반교통사고로 피해자에게 중상해를 입혀 검찰에 의해 공소제기되거나
                 자동차손해배상보장법 시행령 제3조에서 정한 부상급수 1급, 2급 또는 3급에 해당하는 부상을 입힌 경우 : 1억원(한도)(다수가입시 비례보상)
               </td>
-              <td>10,000</td>
+              <td>7,000</td>
             </tr>
             <tr>
-              <td>자동차사고 벌금<br />(상해)</td>
+              <td>자동차사고 벌금<br />(실손)</td>
               <td class="left">보험기간중 운전중 대인사고로 벌금확정판결로 벌금을 부담한 경우 가입금액을 한도록 실손보상 (다수가입시 비례보상)</td>
-              <td>2,000</td>
+              <td>3,000</td>
             </tr>
             <tr>
-              <td>자동차사고 변호사선임비용Ⅲ<br />(상해)</td>
+              <td>자동차사고 변호사선임비용Ⅲ<br />(실손)</td>
               <td class="left">보험기간중 운전중 대인사고로 구속 또는 정식기소되어 변호사선임비용을 부담한 경우 가입금액을 한도록 실손보상 (다수가입시 비례보상)</td>
               <td>2,000</td>
             </tr>
@@ -262,33 +262,33 @@
               <td>기본</td>
               <td class="left">자동차 부상치료비(1~3급)</td>
               <td class="right">100</td>
-              <td class="right">115</td>
-              <td class="right">115</td>
-              <td class="right">115</td>
+              <td class="right">117</td>
+              <td class="right">117</td>
+              <td class="right">117</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">자동차부상치료비Ⅲ</td>
               <td class="right">5</td>
-              <td class="right">510</td>
-              <td class="right">510</td>
-              <td class="right">510</td>
+              <td class="right">519</td>
+              <td class="right">519</td>
+              <td class="right">519</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">교통상해입원일당 (1일이상180일한도)</td>
               <td class="right">3</td>
-              <td class="right">1,815</td>
-              <td class="right">1,821</td>
-              <td class="right">1,968</td>
+              <td class="right">1,839</td>
+              <td class="right">1,848</td>
+              <td class="right">1,998</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">응급실내원보험금(상해)</td>
               <td class="right">5</td>
-              <td class="right">615</td>
-              <td class="right">620</td>
               <td class="right">625</td>
+              <td class="right">625</td>
+              <td class="right">630</td>
             </tr>
             <tr>
               <td>특약</td>
@@ -302,62 +302,62 @@
               <td>특약</td>
               <td class="left">교통상해 80%이상 후유장해생활자금 (매월7년간지급)</td>
               <td class="right">500</td>
-              <td class="right">1,295</td>
-              <td class="right">1,465</td>
-              <td class="right">1,555</td>
+              <td class="right">1,330</td>
+              <td class="right">1,505</td>
+              <td class="right">1,600</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">교통상해사망</td>
               <td class="right">10,000</td>
-              <td class="right">2,950</td>
-              <td class="right">3,130</td>
-              <td class="right">3,420</td>
+              <td class="right">3,000</td>
+              <td class="right">3,190</td>
+              <td class="right">3,480</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">교통사고처리지원금Ⅳ (실손)</td>
+              <td class="left">자가용운전자 교통사고처리지원금Ⅳ (실손)</td>
               <td class="right">7,000</td>
-              <td class="right">3,014</td>
-              <td class="right">3,014</td>
-              <td class="right">3,014</td>
+              <td class="right">3,001</td>
+              <td class="right">3,002</td>
+              <td class="right">3,002</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">자동차사고벌금(실손)</td>
-              <td class="right">2,000</td>
-              <td class="right">273</td>
-              <td class="right">273</td>
-              <td class="right">274</td>
+              <td class="left">자동차사고벌금Ⅱ(실손)</td>
+              <td class="right">3,000</td>
+              <td class="right">288</td>
+              <td class="right">288</td>
+              <td class="right">288</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">자동차사고 변호사선임비용Ⅲ (실손)</td>
+              <td class="left">자동차사고 변호사선임비용Ⅲ(실손)</td>
               <td class="right">2,000</td>
-              <td class="right">222</td>
-              <td class="right">222</td>
-              <td class="right">222</td>
+              <td class="right">221</td>
+              <td class="right">221</td>
+              <td class="right">221</td>
             </tr>
             </tbody>
             <tfoot>
-              <tr>
-                <th colspan="3">보장보험료</th>
-                <td class="right">10,869</td>
-                <td class="right">11,240</td>
-                <td class="right">11,773</td>
-              </tr>
-              <tr>
-                <th colspan="3">적립보험료</th>
-                <td class="right">4,031</td>
-                <td class="right">3,660</td>
-                <td class="right">3,127</td>
-              </tr>
-              <tr>
-                <th colspan="3">납입보험료</th>
-                <td class="right">14,900</td>
-                <td class="right">14,900</td>
-                <td class="right">14,900</td>
-              </tr>
+            <tr>
+              <th colspan="3">보장보험료</th>
+              <td class="right">11,000</td>
+              <td class="right">11,385</td>
+              <td class="right">11,925</td>
+            </tr>
+            <tr>
+              <th colspan="3">적립보험료</th>
+              <td class="right">3,900</td>
+              <td class="right">3,515</td>
+              <td class="right">2,975</td>
+            </tr>
+            <tr>
+              <th colspan="3">납입보험료</th>
+              <td class="right">14,900</td>
+              <td class="right">14,900</td>
+              <td class="right">14,900</td>
+            </tr>
             </tfoot>
           </table>
         </dd>
@@ -388,25 +388,25 @@
               <td>기본</td>
               <td class="left">자동차 부상치료비(1~3급)</td>
               <td class="right">100</td>
-              <td class="right">59</td>
-              <td class="right">59</td>
-              <td class="right">59</td>
+              <td class="right">60</td>
+              <td class="right">60</td>
+              <td class="right">60</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">자동차부상치료비Ⅲ</td>
               <td class="right">5</td>
-              <td class="right">231</td>
-              <td class="right">231</td>
-              <td class="right">231</td>
+              <td class="right">235</td>
+              <td class="right">235</td>
+              <td class="right">235</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">교통상해입원일당 (1일이상180일한도)</td>
               <td class="right">3</td>
-              <td class="right">1,887</td>
-              <td class="right">2,502</td>
-              <td class="right">2,871</td>
+              <td class="right">1,917</td>
+              <td class="right">2,547</td>
+              <td class="right">3,916</td>
             </tr>
             <tr>
               <td>특약</td>
@@ -414,7 +414,7 @@
               <td class="right">5</td>
               <td class="right">420</td>
               <td class="right">420</td>
-              <td class="right">425</td>
+              <td class="right">430</td>
             </tr>
             <tr>
               <td>특약</td>
@@ -428,55 +428,55 @@
               <td>특약</td>
               <td class="left">교통상해 80%이상 후유장해생활자금 (매월7년간지급)</td>
               <td class="right">500</td>
-              <td class="right">495</td>
-              <td class="right">600</td>
-              <td class="right">595</td>
+              <td class="right">515</td>
+              <td class="right">620</td>
+              <td class="right">615</td>
             </tr>
             <tr>
               <td>특약</td>
               <td class="left">교통상해사망</td>
               <td class="right">10,000</td>
-              <td class="right">1,610</td>
-              <td class="right">1,630</td>
-              <td class="right">1,790</td>
+              <td class="right">1,640</td>
+              <td class="right">1,670</td>
+              <td class="right">1,830</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">교통사고처리지원금Ⅳ (실손)</td>
+              <td class="left">자가용운전자 교통사고처리지원금Ⅳ (실손)</td>
               <td class="right">7,000</td>
-              <td class="right">3,013</td>
-              <td class="right">3,013</td>
-              <td class="right">3,013</td>
+              <td class="right">3,001</td>
+              <td class="right">3,001</td>
+              <td class="right">3,001</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">자동차사고벌금(실손)</td>
-              <td class="right">2,000</td>
-              <td class="right">273</td>
-              <td class="right">273</td>
-              <td class="right">273</td>
+              <td class="left">자동차사고벌금Ⅱ(실손)</td>
+              <td class="right">3,000</td>
+              <td class="right">288</td>
+              <td class="right">288</td>
+              <td class="right">288</td>
             </tr>
             <tr>
               <td>특약</td>
-              <td class="left">자동차사고 변호사선임비용Ⅲ (실손)</td>
+              <td class="left">자동차사고 변호사선임비용Ⅲ(실손)</td>
               <td class="right">2,000</td>
-              <td class="right">222</td>
-              <td class="right">222</td>
-              <td class="right">222</td>
+              <td class="right">221</td>
+              <td class="right">221</td>
+              <td class="right">221</td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
               <th colspan="3">보장보험료</th>
-              <td class="right">8,240</td>
-              <td class="right">8,980</td>
-              <td class="right">9,509</td>
+              <td class="right">8,327</td>
+              <td class="right">9,092</td>
+              <td class="right">10,626</td>
             </tr>
             <tr>
               <th colspan="3">적립보험료</th>
-              <td class="right">6,660</td>
-              <td class="right">5,920</td>
-              <td class="right">5,391</td>
+              <td class="right">6,573</td>
+              <td class="right">5,808</td>
+              <td class="right">4,274</td>
             </tr>
             <tr>
               <th colspan="3">납입보험료</th>
@@ -529,42 +529,42 @@
             <tr>
               <td>3</td>
               <td class="right">536,400</td>
-              <td class="right">62,960</td>
-              <td class="right">11.70%</td>
-              <td class="right">65,140</td>
-              <td class="right">12.10%</td>
-              <td class="right">65,140</td>
-              <td class="right">12.10%</td>
+              <td class="right">67,570</td>
+              <td class="right">12.6%</td>
+              <td class="right">69,670</td>
+              <td class="right">12.9%</td>
+              <td class="right">69,670</td>
+              <td class="right">12.9%</td>
             </tr>
             <tr>
               <td>5</td>
               <td class="right">894,000</td>
-              <td class="right">137,680</td>
-              <td class="right">15.40%</td>
-              <td class="right">143,760</td>
-              <td class="right">16.00%</td>
-              <td class="right">143,760</td>
-              <td class="right">16.00%</td>
+              <td class="right">136,100</td>
+              <td class="right">15.2%</td>
+              <td class="right">141,950</td>
+              <td class="right">15.8%</td>
+              <td class="right">141,950</td>
+              <td class="right">15.8%</td>
             </tr>
             <tr>
               <td>10</td>
               <td class="right">1,788,000</td>
-              <td class="right">346,890</td>
-              <td class="right">19.40%</td>
-              <td class="right">372,420</td>
-              <td class="right">20.80%</td>
-              <td class="right">372,420</td>
-              <td class="right">20.80%</td>
+              <td class="right">334,610</td>
+              <td class="right">18.7%</td>
+              <td class="right">359,200</td>
+              <td class="right">20.0%</td>
+              <td class="right">359,200</td>
+              <td class="right">20.0%</td>
             </tr>
             <tr>
               <td>20</td>
               <td class="right">3,576,000</td>
-              <td class="right">716,750</td>
-              <td class="right">20.00%</td>
-              <td class="right">834,390</td>
-              <td class="right">23.30%</td>
-              <td class="right">834,390</td>
-              <td class="right">23.30%</td>
+              <td class="right">689,010</td>
+              <td class="right">19.2%</td>
+              <td class="right">802,180</td>
+              <td class="right">22.4%</td>
+              <td class="right">802,180</td>
+              <td class="right">22.4%</td>
             </tr>
             </tbody>
           </table>
@@ -592,34 +592,34 @@
             </tr>
             <tr>
               <td>3년<br />(536,400)</td>
-              <td class="right">62,960<br />(11.70%)</td>
-              <td class="right">65,140<br />(12.10%)</td>
-              <td class="right">65,140<br />(12.10%)</td>
+              <td class="right">67,570<br />(12.6%)</td>
+              <td class="right">69,670<br />(12.9%)</td>
+              <td class="right">69,670<br />(12.9%)</td>
             </tr>
             <tr>
               <td>5년<br />(894,000)</td>
-              <td class="right">137,680<br />(15.40%)</td>
-              <td class="right">143,760<br />(16.00%)</td>
-              <td class="right">143,760<br />(16.00%)</td>
+              <td class="right">136,100<br />(15.2%)</td>
+              <td class="right">141,950<br />(15.8%)</td>
+              <td class="right">141,950<br />(15.8%)</td>
             </tr>
             <tr>
               <td>10년<br />(1,788,000)</td>
-              <td class="right">346,890<br />(19.40%)</td>
-              <td class="right">372,420<br />(20.80%)</td>
-              <td class="right">372,420<br />(20.80%)</td>
+              <td class="right">334,610<br />(18.7%)</td>
+              <td class="right">359,200<br />(20.0%)</td>
+              <td class="right">359,200<br />(20.0%)</td>
             </tr>
             <tr>
               <td>20년<br />(3,576,000)</td>
-              <td class="right">716,750<br />(20.00%)</td>
-              <td class="right">834,390<br />(23.30%)</td>
-              <td class="right">834,390<br />(23.30%)</td>
+              <td class="right">689,010<br />(19.2%)</td>
+              <td class="right">802,180<br />(22.4%)</td>
+              <td class="right">802,180<br />(22.4%)</td>
             </tr>
             </tbody>
           </table>
         </dd>
         <dd>
           <ol class="list__type2">
-            <li class="pointAccent"><i>1)</i>20년 만기시에 환급금이 834,390원인 만기일부 환급형 입니다. 예시된 금액은 이율에 따라 변동될 수 있습니다.</li>
+            <li class="pointAccent"><i>1)</i>20년 만기시에 환급금이 802,180원인 만기일부 환급형 입니다. 예시된 금액은 이율에 따라 변동될 수 있습니다.</li>
             <li class="pointAccent"><i>2)</i>위 예상해지환급금은 적립부분 순보험료(적립부분 영업보험료에서 회사운영경비를 차감한 금액)를 해당이율로 부리, 적립한 것으로 향후 이계약의 공시이율, 계약내용변경, 보험료 실납입일자 등에 따라 변동될 수 있으며 미래의 수익을 보장하는 것은 아닙니다.
             </li>
             <li><i>3)</i>최저보증이율(0.3%), 평균공시이율 (2019년 기준 2.5%) 및 당사 공시이율 (2020년 2월 기준 1.85%)을 기준으로 산출된 금액입니다.</li>
