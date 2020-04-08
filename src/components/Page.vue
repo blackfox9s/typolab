@@ -101,8 +101,8 @@
             <span class="visual-gift__img mo-only">
               <img src="@/assets/images/gift_mobile.jpg" alt="" />
             </span>
-            <dl>
-              <dt>※ 전화상담 및 가입 시 확인</dt>
+            <dl class="mo-only">
+              <dt>※ 정상 상담 완료 고객에게 지급</dt>
               <dd>- 운전자보험 관심 고객 당 1회 참여 가능합니다.</dd>
               <dd>- 이벤트 완료 후 익월 말일 일괄 발송됩니다.</dd>
               <dd>- 제공주체 : ㈜마케팅인슈</dd>
