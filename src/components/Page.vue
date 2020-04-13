@@ -102,10 +102,11 @@
               <img src="@/assets/images/gift_mobile.jpg" alt="" />
             </span>
             <dl class="mo-only">
-              <dt>※ 정상 상담 완료 고객에게 지급</dt>
-              <dd>- 운전자보험 관심 고객 당 1회 참여 가능합니다.</dd>
+              <dt>※정상 상담완료 고객에게 지급</dt>
+              <dd>-운전자보험 관심 고객당 1회 참여 가능합니다.</dd>
               <dd>- 이벤트 완료 후 익월 말일 일괄 발송됩니다.</dd>
-              <dd>- 제공주체 : ㈜마케팅인슈</dd>
+              <dd>- 본 경품은 소비자가 기준 3만원 이하 물품임</dd>
+              <dd>- 제공주체 : (주)마케팅인슈</dd>
             </dl>
           </div>
           <div class="pc-only visual-call">
