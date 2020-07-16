@@ -1,0 +1,33 @@
+@import 'maxin';
+
+.main-portfolio-list {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    width: 33.3333%;
+    @include transition;
+  }
+  img {
+    width: 100%;
+  }
+
+  @include wide {
+  }
+  @include middle {
+    li {
+      width: 50%;
+    }
+  }
+  @include narrow {
+    li {
+      width: 100%;
+    }
+  }
+}

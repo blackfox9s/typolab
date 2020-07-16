@@ -1,0 +1,28 @@
+@mixin wide {
+  @media (min-width: 1280px) { @content; }
+}
+@mixin middle {
+  @media (min-width: 768px) and (max-width: 1279px) { @content; }
+}
+@mixin narrow {
+  @media (max-width: 767px) { @content; }
+}
+
+@mixin transition {
+  transition: all 0.2s ease;
+}
+@mixin ellipsis {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin tlabFont($base:300) {
+  font-family: 'TlabModernLife';
+  @if $base != 300 {
+    font-weight: $base;
+  }
+}

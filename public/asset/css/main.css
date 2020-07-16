@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@import "fonts.css";
+@import "base.css";
+@import "common.css";
+@import "dep.css";
+
+.front-visual-sec { text-align: center; position: relative; }
+.front-visual-sec .in { max-width: 1024px; margin: 0 auto; }
+.front-visual-sec .bx-wrapper { position: relative; }
+.front-visual-sec .bx-pager { position: absolute; bottom: 20px; left: 50%; overflow: hidden; transform: translateX(-50%); z-index: 60; }
+.front-visual-sec .bx-controls a { display: block; font-size: 0; overflow: hidden; }
+.front-visual-sec .bx-pager-item { float: left; width: 10px; height: 10px; margin: 0 5px; }
+.front-visual-sec .bx-pager-item a { height: 100%; border-radius: 10px; opacity: 0.4; background: #777; }
+.front-visual-sec .bx-pager-item a.active { opacity: 1; }
+.front-visual-sec .bx-controls-direction a { position: absolute; top: 50%; width: 20px; height: 41px; transform: translateY(-50%); background: 0 0 no-repeat; background-size: contain; z-index: 60; }
+.front-visual-sec .bx-controls-direction a.bx-prev { left: 16px; background-image: url("../../asset/images/main/btn-prev.png"); }
+.front-visual-sec .bx-controls-direction a.bx-next { right: 16px; background-image: url("../../asset/images/main/btn-next.png"); }
+.phone .front-visual-sec .bx-controls-direction a { width: 10px; height: 20px; }
+
+.front-etc-sec { display: table; table-layout: fixed; width: 100%; max-width: 996px; margin: 52px auto -24px; overflow: hidden; }
+.front-etc-sec .col { display: table-cell; vertical-align: middle; }
+.front-etc-sec .m-notice { padding: 0 30px; }
+.front-etc-sec .m-banner { padding: 0 30px 0 13px; }
+.front-etc-sec .m-banner.col2 { overflow: hidden; }
+.front-etc-sec .m-banner.col2 span { float: left; width: 50%; }
+.front-etc-sec .m-banner.col2 a { display: block; border: 1px solid #d5d5d5; }
+.front-etc-sec .m-banner.col2 span:first-child a { margin-right: 6%; }
+.front-etc-sec .m-banner.col2 span:last-child a { margin-left: 6%; }
+.front-etc-sec dt { color: #222; font-weight: 500; }
+.front-etc-sec dd { margin-top: 8px; }
+.front-etc-sec dd p { padding-right: 22px; font-size: 12px; white-space: nowrap; margin-top: 3px; }
+.front-etc-sec dd p:after { content: ''; display: inline-block; width: 18px; height: 18px; vertical-align: top; margin-left: 5px; }
+.front-etc-sec dd p.new:after { background: url("../../asset/images/common/ico-new.png") no-repeat; }
+.front-etc-sec dd a { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; -moz-text-overflow: ellipsis; white-space: nowrap; }
+.smart .front-etc-sec { margin-top: 25px; }
+.smart .front-etc-sec .m-notice { padding: 0 24px; }
+.smart .front-etc-sec .m-banner { padding-right: 24px; }
+.phone .front-etc-sec { display: block; }
+.phone .front-etc-sec .col { display: block; }
+.phone .front-etc-sec .m-notice, .phone .front-etc-sec .m-banner { padding: 0 24px; }
+.phone .front-etc-sec .m-banner { margin-top: 24px; }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta id="mobileMeta" name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+
+  <link rel="stylesheet" href="../asset/css/main.css">
+  <link rel="stylesheet" href="../asset/css/renewel.css">
+
+  <script type="text/javascript" src="../asset/js/plugin/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="../asset/js/plugin/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../asset/js/plugin/jquery-placeholder.min.js"></script>
+  <script type="text/javascript" src="../asset/js/plugin/jquery.flip.min.js"></script>
+  <script type="text/javascript" src="../asset/js/plugin/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="../asset/js/plugin/jquery.BlackAndWhite.js"></script>
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="../asset/js/plugin/css3-media.js"></script>
+  <script type="text/javascript" src="../asset/js/plugin/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="../asset/js/ui.js"></script>
+</head>
+
+<body>
+<dl class="skip">
+  <dt>바로가기 메뉴</dt>
+  <dd><a href="#header">메인 메뉴 바로가기</a></dd>
+  <dd><a href="#content">본문 바로가기</a></dd>
+</dl>
+
+<div id="wrap" class="active-0">
+  <!-- start : includeHeader 임시코드 인크루드시 삭제 -->
+  <div id="includeHeader"></div>
+  <script type="text/javascript">$("#includeHeader").load("header.html #header");</script>
+  <!-- end : includeHeader 임시코드 인크루드시 삭제 -->
+
+  <div id="container">
+    <div id="content">
+      <section class="main-portfolio-list">
+        <ul>
+          <li>
+            <img src="../asset/images/main/portfolio_01.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../asset/images/main/portfolio_02.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../asset/images/main/portfolio_03.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../asset/images/main/portfolio_04.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../asset/images/main/portfolio_05.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../asset/images/main/portfolio_06.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../asset/images/main/portfolio_07.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../asset/images/main/portfolio_08.jpg" alt="" />
+          </li>
+          <li>
+            <img src="../asset/images/main/portfolio_09.jpg" alt="" />
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div><!-- end : container -->
+
+  <!-- start : includeFooter 임시코드 인크루드시 삭제 -->
+  <div id="include-footer"></div>
+  <script type="text/javascript">$("#include-footer").load("footer.html", utilApp.btnAction);</script>
+  <!-- end : includeFooter 임시코드 인크루드시 삭제 -->
+</div><!-- end : wrap -->
+</body>
+</html>
