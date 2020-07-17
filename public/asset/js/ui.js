@@ -30,16 +30,33 @@ var layoutApp = (function ($) {
         type = typeD + " pc";
       }
     }
+    /* font-size 변경 시 */
+    newPageFontReSize(type)
     return type;
   }
 
-  function displayType() {$("html").attr("class", deviceType());}
+  function newPageFontReSize(type) {
+    var $sizeObj = $('.header')
+    if (type.indexOf('desktop')>-1) {
+      var resolution = 1880;
+      var font = 52;
+      var width = $('html').outerWidth(true, true);
+      var fontSize = font * (width/resolution);
+      fontSize = fontSize > font ? font : fontSize < 20 ? 20 : fontSize;
+      $sizeObj.css('font-size', fontSize);
+    } else {
+      $sizeObj.removeAttr('style')
+    }
+  }
 
   function menu() {
-    var nav = $(".smart-box"), allmenu = $(".btn-all-menu"), menuclose = $(".btn-close");
+    var nav = $(".smart-box"),
+        allmenu = $(".btn-all-menu, .header__button--all"),
+        menuclose = $(".btn-close, .header__button--close");
 
     var reg_active = /[^0-9]/g;
     var active = $("#wrap").attr("class");
+    console.log(active)
 
     if (active !== undefined) {
       var activeNum = active.replace(reg_active, '');
@@ -50,18 +67,23 @@ var layoutApp = (function ($) {
 
     allmenu.off("click").on("click", function () {
       nav.show();
+      $('.header__menus').addClass('opened')
     });
     menuclose.off("click").on("click", function () {
       nav.hide();
+      $('.header__menus').removeClass('opened')
     });
   }
 
-  $(document).ready(function () {
-    displayType();
-    $(window).on("resize", displayType).trigger("resize");
-  });
+  function displayType() {
+    $("html").attr("class", deviceType());
+    $('.header__menus').removeClass('opened');
+  }
+
   $(window).load(function () {
+    displayType();
     menu();
+    $(window).on("resize", displayType).trigger("resize");
   });
   return {menu: menu}
 })(jQuery);
@@ -245,6 +267,15 @@ var utilApp = (function ($) {
 
     $("input, textarea").placeholder();
     $(".portfolio .thum").BlackAndWhite({hoverEffect: true, responsive: true, speed: 0});
+    $(".main-portfolio-list__thumb").BlackAndWhite({
+      invertHoverEffect: true,
+      hoverEffect: true,
+      speed: {
+        fadeIn: 300,
+        fadeOut: 300
+      },
+      intensity: 1
+    });
   });
   $(window).load(function () {
     btnAction();

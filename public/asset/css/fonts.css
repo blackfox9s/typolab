@@ -65,3 +65,26 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'TlabWIDEL';
+    src: url('../fonts/TlabWIDEL.eot');
+    src: url('../fonts/TlabWIDEL.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TlabWIDEL.woff2') format('woff2'),
+    url('../fonts/TlabWIDEL.woff') format('woff'),
+    url('../fonts/TlabWIDEL.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TlabWIDER';
+    src: url('../fonts/TlabWIDER.eot');
+    src: url('../fonts/TlabWIDER.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TlabWIDER.woff2') format('woff2'),
+    url('../fonts/TlabWIDER.woff') format('woff'),
+    url('../fonts/TlabWIDER.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

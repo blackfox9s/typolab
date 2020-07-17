@@ -64,6 +64,7 @@ dl.skip a:focus { top: 0; }
 .fr { float: right; }
 
 /* header */
+/*
 #header { padding-top: 80px; height: 90px; }
 #header .box { position: relative; margin: 0 30px; }
 #header h1 { line-height: 0; width: 173px; }
@@ -101,6 +102,7 @@ dl.skip a:focus { top: 0; }
 .smart #header .util .etc span a { font-size: 18px; }
 .smart #header .util .etc span.cart { display: none; }
 .smart #header .util .pro { margin-top: 26px; }
+*/
 
 /* footer */
 #footer .box { position: relative; font-size: 11px; margin: 0 30px 48px; }

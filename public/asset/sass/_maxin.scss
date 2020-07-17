@@ -9,7 +9,7 @@
 }
 
 @mixin transition {
-  transition: all 0.2s ease;
+  transition: all 0.2s;
 }
 @mixin ellipsis {
   overflow : hidden;
@@ -25,4 +25,24 @@
   @if $base != 300 {
     font-weight: $base;
   }
+}
+
+@function rem($pixels, $context: $fontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@function em($pixels, $context: $fontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1em;
 }
