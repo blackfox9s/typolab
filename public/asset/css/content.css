@@ -38,6 +38,8 @@
 .portfolio ul li a span { display: block; white-space: nowrap; white-space: nowrap; overflow: hidden; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 .portfolio ul li a .thum { position: relative; line-height: 0; }
 .portfolio ul li a .thum canvas { width: 100% !important; height: 100% !important; }
+.portfolio ul li a .thum {padding-top: 100%;}
+.portfolio ul li a .thum img {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .tablet .portfolio ul li { width: 25% !important; }
 @media screen and (max-width: 640px) { .tablet .portfolio ul li { width: 33.3% !important; } }
 .phone .portfolio ul li { width: 50% !important; }
