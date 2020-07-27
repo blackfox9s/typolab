@@ -73,8 +73,8 @@
 #content { padding-top: 0; padding-bottom: 0; }
 
 .main-portfolio-list { margin: 0 auto; overflow: hidden; }
-.main-portfolio-list ul { display: flex; flex-wrap: wrap; background: #000; }
-.main-portfolio-list li { position: relative; box-sizing: border-box; flex: 0 1 auto; width: 33.3333%; transition: all 0.2s; }
+.main-portfolio-list ul { display: flex; flex-wrap: wrap; }
+.main-portfolio-list li { position: relative; box-sizing: border-box; flex: 0 1 auto; width: 33.3333%; background: #000; transition: all 0.2s; }
 .main-portfolio-list li::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0; transition: all 0.2s; }
 .main-portfolio-list img { width: 100%; transition: all 0.2s; }
 .main-portfolio-list__info { position: absolute; bottom: 30px; left: 35px; color: #fff; z-index: 2; opacity: 0; font-size: 12px; transition: all 0.2s; }

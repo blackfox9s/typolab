@@ -344,13 +344,13 @@ $color3: #767676;
   ul {
     display: flex;
     flex-wrap: wrap;
-    background: #000;
   }
   li {
     position: relative;
     box-sizing: border-box;
     flex: 0 1 auto;
     width: 33.3333%;
+    background: #000;
     @include transition;
     &::before {
       content: '';

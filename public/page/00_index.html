@@ -20,6 +20,7 @@
   <script type="text/javascript" src="../asset/js/plugin/html5.js"></script>
   <![endif]-->
   <script type="text/javascript" src="../asset/js/ui.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
 </head>
 
 <body>
@@ -125,9 +126,6 @@
             </div>
           </li>
         </ul>
-        <div class="main-portfolio-list__loading">
-          <div class="loader"></div>
-        </div>
       </section>
     </div>
   </div><!-- end : container -->
@@ -136,6 +134,9 @@
   <div id="include-footer"></div>
   <script type="text/javascript">$("#include-footer").load("footer.html", utilApp.btnAction);</script>
   <!-- end : includeFooter 임시코드 인크루드시 삭제 -->
+  <script>
+    gsap.from('.main-portfolio-list ul li', {duration: 0.5, opacity: 0, y:  100, stagger: 0.25})
+  </script>
 </div><!-- end : wrap -->
 </body>
 </html>
