@@ -286,7 +286,7 @@ var utilApp = (function ($) {
 var mainApp = (function ($) {
   $(document).ready(function () {
     if($('.about-slide').length >= 1){
-      $('.about-slide ul').bxSlider({auto: true, pager: true, controls: false});
+      $('.about-slide ul').bxSlider({auto: true, pager: true, controls: false,  speed: 3000, pause: 4000});
     }
     if($('.front-visual-sec').length >= 1){
       $('.front-visual-sec ul').bxSlider({auto: true, autoControls: false, stopAutoOnClick: true, pager: true});

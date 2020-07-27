@@ -39,7 +39,7 @@
 .smart .header__project-request .btn.ty1 { width: 150px; height: 40px; font-size: 18px; }
 .smart .header__project-request .btn.ty1 span { display: flex; align-items: center; justify-content: center; }
 
-.footer { display: flex; justify-content: space-between; padding: 50px 40px 40px; font-size: 15px; transition: all 0.2s; }
+.footer { display: flex; justify-content: space-between; padding: 80px 40px 40px; font-size: 15px; clear: both; transition: all 0.2s; }
 .footer__etc { width: 40%; max-width: 600px; }
 .footer__etc img { width: 100%; }
 .footer__link { display: flex; padding-top: 5px; }

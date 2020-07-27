@@ -135,7 +135,9 @@
   <script type="text/javascript">$("#include-footer").load("footer.html", utilApp.btnAction);</script>
   <!-- end : includeFooter 임시코드 인크루드시 삭제 -->
   <script>
-    gsap.from('.main-portfolio-list ul li', {duration: 0.5, opacity: 0, y:  100, stagger: 0.25})
+    setTimeout(function () {
+      gsap.from('.main-portfolio-list ul li', {duration: 0.5, opacity: 0, y:  100, stagger: 0.25});
+    }, 300);
   </script>
 </div><!-- end : wrap -->
 </body>
